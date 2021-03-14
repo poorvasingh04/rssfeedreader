@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1",
+    "items": [
+      {
+        "id": "1",
+        "title": "New York’s vaccine czar called county officials to gauge their loyalty to Cuomo amid sexual harassment investigation",
+        "description": "New York’s “vaccine czar” — a longtime adviser to Gov. Andrew M. Cuomo — phoned county officials in the past two weeks in attempts to gauge their loyalty to the embattled governor amid an ongoing sexual harassment investigation, according to multiple officials...",
+        "date": "March 14, 2021 at 5:15 p.m",
+        "url": "https://www.washingtonpost.com/politics/cuomo-schwartz-vaccine-calls/2021/03/14/18f2e320-8448-11eb-9ca6-54e187ee4939_story.html"
+      },
+      {
+        "id": "2",
+        "title": "Pelosi declines to call on Cuomo to resign despite having 'zero tolerance' for sexual harassment",
+        "description": "House Speaker Nancy Pelosi, D-Calif., repeatedly reaffirmed Sunday that she has \"zero tolerance\" for sexual harassment – but fell short of calling on embattled New York Gov. Andrew Cuomo to resign...",
+        "date": "March 14, 2021 at 4:15 p.m",
+        "url": "https://www.foxnews.com/politics/pelosi-declines-cuomo-resignation-zero-tolerance-sexual-harassment"
+      },
+      {
+        "id": "3",
+        "title": "The Imperious Rise and Accelerating Fall of Andrew Cuomo",
+        "description": "Last spring, when the coronavirus outbreak was surging in New York, Gov. Andrew M. Cuomo’s daily briefings became appointment television for many, as he authoritatively ticked through the latest statistics on infections, hospital beds and deaths...",
+        "date": "March 14, 2021 at 8:41 a.m",
+        "url": "https://www.nytimes.com/2021/03/13/us/politics/andrew-cuomo-scandals.html"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "items": [
+      {
+        "id": "1",
+        "title": "Myanmar protests: Protesters killed in bloody Yangon crackdown",
+        "description": "At least 14 protesters have been killed in clashes in Myanmar's main city Yangon as politicians ousted by the military coup called for \"revolution\".\nSecurity forces opened fire in the Yangon area of Hlaing Tharyar as protesters used sticks and knives....",
+        "date": "March 14, 2021 at 7:11 p.m",
+        "url": "https://www.bbc.com/news/world-asia-56395085"
+      },
+      {
+        "id": "2",
+        "title": "Sarah Everard: Met Police chief will not resign over vigil scenes",
+        "description": "The Met Police chief has said she is not considering her position, after the force was criticised over its handling of a vigil for Sarah Everard.\nOfficers handcuffed women and removed them from crowds on Clapham Common in London on Saturday.",
+        "date": "March 14, 2021 at 8:30 p.m",
+        "url": "https://www.bbc.com/news/uk-56389824"
+      },
+      {
+        "id": "3",
+        "title": "North Korea 'not responding' to US contact efforts",
+        "description": "US President Joe Biden's administration says it has been trying to contact the North Korean government since February but has yet to receive a response.\nWashington had tried to reach Pyongyang in several different ways to prevent tensions escalating, officials said.",
+        "date": "March 14, 2021 at 9:30 a.m",
+        "url": "https://www.bbc.com/news/world-asia-56391445"
+      }
+    ]
+  }
+]

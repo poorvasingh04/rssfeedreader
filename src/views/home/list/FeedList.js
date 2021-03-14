@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import { getFeedList } from '../../../services/actions';
 import Feed from '../feed/Feed';
+import SCREENS from '../../../constants/SCREENS';
 
 function FeedList({ navigation }) {
   const dispatch = useDispatch();
@@ -29,14 +30,19 @@ function FeedList({ navigation }) {
   }, []);
 
   openFeed = (feed) => {
-
+    if(navigation) navigation.navigate(
+      SCREENS.FEED_DETAILS,
+      {
+        feed,
+      }
+    );
   }
 
-  renderItem = ({ item }) => <Feed item={item} />
+  renderItem = ({ item }) => <Feed item={item} openFeed={openFeed} />
 
   return (
     <FlatList
-      keyExtractor={(_, index) => index.toString()}
+      keyExtractor={(item) => item.id}
       renderItem={renderItem}
       data={feedsData}
     />

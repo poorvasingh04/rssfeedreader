@@ -1,4 +1,4 @@
-import { FEED_LIST } from '../actions/constants';
+import { FEED_DETAILS } from '../actions/constants';
 
 const INITIAL_STATE = {
   data: null,
@@ -6,8 +6,9 @@ const INITIAL_STATE = {
 
 export default function (state = INITIAL_STATE, action) {
   const { payload } = action;
+
   switch (action.type) {
-    case FEED_LIST:
+    case FEED_DETAILS:
       const { data } = payload;
       return {
         data,

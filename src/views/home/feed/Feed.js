@@ -11,7 +11,10 @@ const {
   linkStyle,
 } = style;
 
-function Feed({ item }) {
+function Feed({
+  item,
+  openFeed
+}) {
 
   const { name } = item;
 
