@@ -1,3 +1,4 @@
+import { sortItemsByDate } from '../utils/DateFormatter';
 import {
   FEED_DETAILS,
   FEED_LIST,
@@ -23,7 +24,7 @@ const getFeedDetails = (id) => dispatch => {
     {
       type: FEED_DETAILS,
       payload: {
-        data: items,
+        data: sortItemsByDate(items),
       }
     }
   );
