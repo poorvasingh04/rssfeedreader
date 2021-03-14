@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeedDetails test cases----- renders correctly 1`] = `
+<RCTScrollView
+  data={
+    Array [
+      Object {
+        "date": "03-14-2021 7:11 pm",
+        "description": "At least 14 protesters have been killed in clashes in Myanmar's main city Yangon as politicians ousted by the military coup called for \\"revolution\\".
+Security forces opened fire in the Yangon area of Hlaing Tharyar as protesters used sticks and knives....",
+        "id": "1",
+        "title": "Myanmar protests: Protesters killed in bloody Yangon crackdown",
+        "url": "https://www.bbc.com/news/world-asia-56395085",
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 10,
+            "elevation": 4,
+            "margin": 10,
+            "opacity": 1,
+            "padding": 20,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 18,
+              "fontWeight": "700",
+            }
+          }
+        >
+          Sunday, March 14, 2021 7:11 PM
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "marginBottom": 5,
+              "marginTop": 5,
+            }
+          }
+        >
+          Myanmar protests: Protesters killed in bloody Yangon crackdown
+        </Text>
+        <Text>
+          At least 14 protesters have been killed in clashes in Myanmar's main city Yangon as politicians ousted by the military coup called for "revolution".
+Security forces opened fire in the Yangon area of Hlaing Tharyar as protesters used sticks and knives....
+        </Text>
+        <Text
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "alignSelf": "flex-start",
+                "borderColor": "#000000",
+                "borderRadius": 4,
+                "borderWidth": 0.5,
+                "color": "#000000",
+                "fontSize": 14,
+                "marginTop": 10,
+                "overflow": "hidden",
+                "padding": 10,
+              },
+              Object {
+                "backgroundColor": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Mark as favorite
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
