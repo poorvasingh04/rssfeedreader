@@ -4,10 +4,11 @@ import {
   FlatList,
 } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
+import SCREENS from '../../constants/SCREENS';
 import { getFeedDetails } from '../../services/actions';
 import FeedItem from './feed item/FeedItem';
 
-function FeedDetails() {
+function FeedDetails({navigation}) {
 
   const feed = useRoute().params.feed || {};
   const { id } = feed;
@@ -31,8 +32,15 @@ function FeedDetails() {
     }
   }, []);
 
-  openItem = () => {
-
+  openItem = (item) => {
+    const { url } = item;
+    
+    if(navigation) navigation.navigate(
+      SCREENS.FEED_ITEM_DETAILS,
+      {
+        url: url,
+      }
+    );
   }
 
   renderItem = ({ item }) => <FeedItem item={item} openItem={openItem} />

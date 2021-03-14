@@ -5,6 +5,7 @@ import FeedList from '../views/home/list/FeedList';
 import SCREENS from '../constants/SCREENS';
 import COLORS from '../constants/COLORS';
 import FeedDetails from '../views/feed/FeedDetails';
+import FeedItemDetails from '../views/feed/feed item details/FeedItemDetails';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ const {
 const {
   FEED_LIST,
   FEED_DETAILS,
+  FEED_ITEM_DETAILS,
 } = SCREENS;
 
 function BaseNavigator() {
@@ -35,6 +37,10 @@ function BaseNavigator() {
         <Stack.Screen
           name={FEED_DETAILS}
           component={FeedDetails}
+        />
+        <Stack.Screen
+          name={FEED_ITEM_DETAILS}
+          component={FeedItemDetails}
         />
       </Stack.Navigator>
     </NavigationContainer>
