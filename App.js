@@ -1,17 +1,17 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  View,
-} from 'react-native';
+import { Provider } from 'react-redux';
 
+import reduxStore from './src/services/reduxStore/initializeStore';
 import BaseNavigator from './src/navigation/BaseNavigator';
 
 const App = () => {
+  const { store, storeStyle } = reduxStore();
+  const { viewStyle } = storeStyle;
 
   return (
-    <View style={{ flex: 1 }}>
+    <Provider store={store} style={viewStyle}>
       <BaseNavigator />
-    </View>
+    </Provider>
   );
 };
 

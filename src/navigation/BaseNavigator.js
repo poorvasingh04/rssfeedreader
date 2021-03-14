@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import FeedList from '../views/home/FeedList';
+import FeedList from '../views/home/list/FeedList';
 import SCREENS from '../constants/SCREENS';
 import COLORS from '../constants/COLORS';
 
