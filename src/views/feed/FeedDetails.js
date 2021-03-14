@@ -11,7 +11,7 @@ import FeedItem from './feed item/FeedItem';
 function FeedDetails({navigation}) {
 
   const feed = useRoute().params.feed || {};
-  const { id } = feed;
+  const { id, name } = feed;
   const dispatch = useDispatch();
 
   const feedsDetails = useSelector(state => state.FeedDetails.data);
@@ -23,6 +23,12 @@ function FeedDetails({navigation}) {
         return;
       }
      
+      if(feedsDetails) {
+        navigation.setOptions({
+          title: `${name} (${feedsDetails.length})`,
+        });
+      }
+
       dispatch(getFeedDetails(id));
     };
     runEffect();
@@ -30,15 +36,16 @@ function FeedDetails({navigation}) {
     return () => {
       cancel = true;
     }
-  }, []);
+  }, [feedsDetails]);
 
   openItem = (item) => {
-    const { url } = item;
-    
+    const { url, title } = item;
+
     if(navigation) navigation.navigate(
       SCREENS.FEED_ITEM_DETAILS,
       {
         url: url,
+        title,
       }
     );
   }

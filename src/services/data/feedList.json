@@ -1,10 +1,12 @@
 [
   {
     "id": "1",
-    "name": "Google news"
+    "name": "Google news",
+    "results_count": "3"
   },
   {
     "id": "2",
-    "name": "BBC news"
+    "name": "BBC news",
+    "results_count": "3"
   }
 ]
