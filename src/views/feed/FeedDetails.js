@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import SCREENS from '../../constants/SCREENS';
-import { getFeedDetails } from '../../services/actions';
+import { getFeedDetails, markFeedAsFavorite } from '../../services/actions';
 import FeedItem from './feed item/FeedItem';
 
 function FeedDetails({navigation}) {
@@ -50,7 +50,17 @@ function FeedDetails({navigation}) {
     );
   }
 
-  renderItem = ({ item }) => <FeedItem item={item} openItem={openItem} />
+  const markAsFavoriteAction = (item) => {
+    dispatch(markFeedAsFavorite(id, item));
+  }
+
+  renderItem = ({ item }) => (
+    <FeedItem
+      item={item}
+      openItem={openItem}
+      markAsFavoriteAction={markAsFavoriteAction}
+    />
+  );
 
   return (
     <FlatList

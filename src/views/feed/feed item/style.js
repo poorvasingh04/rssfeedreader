@@ -33,6 +33,17 @@ const style = {
     marginTop: 5,
     marginBottom: 5,
   },
+  linkStyle: {
+    color: BLACK,
+    fontSize: 14,
+    marginTop: 10,
+    alignSelf: 'flex-start',
+    borderRadius: 4,
+    padding: 10,
+    borderColor: BLACK,
+    borderWidth: 0.5,
+    overflow: 'hidden',
+  },
 };
 
 export default style;
