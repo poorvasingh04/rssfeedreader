@@ -31,7 +31,7 @@ function FeedList({ navigation }) {
 
   openFeed = (feed) => {
     if(navigation) navigation.navigate(
-      SCREENS.FEED_DETAILS,
+      SCREENS.FEED_DETAILS.title,
       {
         feed,
       }

@@ -42,7 +42,7 @@ function FeedDetails({navigation}) {
     const { url, title } = item;
 
     if(navigation) navigation.navigate(
-      SCREENS.FEED_ITEM_DETAILS,
+      SCREENS.FEED_ITEM_DETAILS.title,
       {
         url: url,
         title,

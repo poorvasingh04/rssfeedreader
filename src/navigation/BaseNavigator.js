@@ -1,11 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator, HeaderTitle } from '@react-navigation/stack';
-import FeedList from '../views/home/list/FeedList';
+import { createStackNavigator } from '@react-navigation/stack';
 import SCREENS from '../constants/SCREENS';
 import COLORS from '../constants/COLORS';
-import FeedDetails from '../views/feed/FeedDetails';
-import FeedItemDetails from '../views/feed/feed item details/FeedItemDetails';
 
 const Stack = createStackNavigator();
 
@@ -21,34 +18,29 @@ const {
 } = SCREENS;
 
 function BaseNavigator() {
+  const screen = ({ title, component }) => (
+    <Stack.Screen
+      name={title}
+      component={component}
+      options={({ route }) => ({
+        title: route.params && route.params.title,
+      })}
+    />
+  );
+
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName={FEED_LIST}
+        initialRouteName={FEED_LIST.title}
         screenOptions={{
           headerTintColor: WHITE,
           headerStyle: { backgroundColor: HEADER },
           headerBackTitle: 'Back',
         }}
       >
-        <Stack.Screen
-          name={FEED_LIST}
-          component={FeedList}
-        />
-        <Stack.Screen
-          name={FEED_DETAILS}
-          component={FeedDetails}
-          options={({ route }) => ({
-            title: route.params.title,
-          })}
-        />
-        <Stack.Screen
-          name={FEED_ITEM_DETAILS}
-          component={FeedItemDetails}
-          options={({ route }) => ({
-            title: route.params.title,
-          })}
-        />
+        {screen(FEED_LIST)}
+        {screen(FEED_DETAILS)}
+        {screen(FEED_ITEM_DETAILS)}
       </Stack.Navigator>
     </NavigationContainer>
   );
