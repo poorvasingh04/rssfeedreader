@@ -1,7 +1,0 @@
-const API_STAGE = {
-  PENDING: '_PENDING',
-  FULFILLED: '_FULFILLED',
-  REJECTED: '_REJECTED',
-};
-
-export default API_STAGE;
